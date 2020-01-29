@@ -1,4 +1,5 @@
 # flix-assignment-codepath
+### V1
 
 ## Overview
 For this unit's app assignment, you'll build the first part of a movie browsing app--similar to Fandango and Rotten Tomatoes--that lets a user view and scroll through a list of movies. To do this, you'll learn how to get data from the internet (via an API) and display it in a scrollable list in your app; two core concepts you'll use in virtually every app you'll ever build! When finished, your app will look similar to the app pictured above.
@@ -11,10 +12,12 @@ For this unit's app assignment, you'll build the first part of a movie browsing 
 - [X] User can view the app on various sizes and orientations
 - [X] Run your app on a real device
 
-### Fixing constraints
-- []
+### Version 2
+- [] Fixing constraints for cell
+- [] Finding appropriate font scale/size
+- [] UI change to UICollection instead of UITableView
 
-### Another View
+### Version 2.1.0
 - [] Passing data to another view controller
 - [] Showing users data
 - [] Go back to previous view
