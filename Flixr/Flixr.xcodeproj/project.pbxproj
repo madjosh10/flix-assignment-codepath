@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		421FD5C523E20E4F00CE0230 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD5C423E20E4F00CE0230 /* AppDelegate.swift */; };
 		421FD5C723E20E4F00CE0230 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD5C623E20E4F00CE0230 /* SceneDelegate.swift */; };
-		421FD5C923E20E4F00CE0230 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD5C823E20E4F00CE0230 /* ViewController.swift */; };
 		421FD5CC23E20E4F00CE0230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421FD5CA23E20E4F00CE0230 /* Main.storyboard */; };
 		421FD5CE23E20E5700CE0230 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421FD5CD23E20E5700CE0230 /* Assets.xcassets */; };
 		421FD5D123E20E5700CE0230 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421FD5CF23E20E5700CE0230 /* LaunchScreen.storyboard */; };
+		421FD5D923E2181400CE0230 /* MoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD5D823E2181400CE0230 /* MoviesVC.swift */; };
+		421FD5DE23E219DA00CE0230 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD5DD23E219DA00CE0230 /* Movie.swift */; };
+		421FD5E123E2241D00CE0230 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD5E023E2241D00CE0230 /* MovieCell.swift */; };
+		B394C63FDE3BB53381B47834 /* Pods_Flixr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6158947B6BF7240B0F9CBD /* Pods_Flixr.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23A9321BD64F45420944E107 /* Pods-Flixr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixr.release.xcconfig"; path = "Target Support Files/Pods-Flixr/Pods-Flixr.release.xcconfig"; sourceTree = "<group>"; };
 		421FD5C123E20E4F00CE0230 /* Flixr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		421FD5C423E20E4F00CE0230 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		421FD5C623E20E4F00CE0230 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		421FD5C823E20E4F00CE0230 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		421FD5CB23E20E4F00CE0230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		421FD5CD23E20E5700CE0230 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		421FD5D023E20E5700CE0230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		421FD5D223E20E5700CE0230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		421FD5D823E2181400CE0230 /* MoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVC.swift; sourceTree = "<group>"; };
+		421FD5DD23E219DA00CE0230 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		421FD5E023E2241D00CE0230 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		71092EFDD6860A3B2CA37C94 /* Pods-Flixr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixr.debug.xcconfig"; path = "Target Support Files/Pods-Flixr/Pods-Flixr.debug.xcconfig"; sourceTree = "<group>"; };
+		FF6158947B6BF7240B0F9CBD /* Pods_Flixr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B394C63FDE3BB53381B47834 /* Pods_Flixr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A9681F00BFCFF6047133961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF6158947B6BF7240B0F9CBD /* Pods_Flixr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		421FD5B823E20E4F00CE0230 = {
 			isa = PBXGroup;
 			children = (
 				421FD5C323E20E4F00CE0230 /* Flixr */,
 				421FD5C223E20E4F00CE0230 /* Products */,
+				C4D9C70B9D1028B9576C37A5 /* Pods */,
+				0A9681F00BFCFF6047133961 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,59 @@
 		421FD5C323E20E4F00CE0230 /* Flixr */ = {
 			isa = PBXGroup;
 			children = (
+				421FD5DF23E2240300CE0230 /* Cell */,
+				421FD5DC23E2183E00CE0230 /* Model */,
+				421FD5DB23E2183A00CE0230 /* View */,
+				421FD5DA23E2183300CE0230 /* Controller */,
 				421FD5C423E20E4F00CE0230 /* AppDelegate.swift */,
 				421FD5C623E20E4F00CE0230 /* SceneDelegate.swift */,
-				421FD5C823E20E4F00CE0230 /* ViewController.swift */,
-				421FD5CA23E20E4F00CE0230 /* Main.storyboard */,
 				421FD5CD23E20E5700CE0230 /* Assets.xcassets */,
-				421FD5CF23E20E5700CE0230 /* LaunchScreen.storyboard */,
 				421FD5D223E20E5700CE0230 /* Info.plist */,
 			);
 			path = Flixr;
+			sourceTree = "<group>";
+		};
+		421FD5DA23E2183300CE0230 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				421FD5D823E2181400CE0230 /* MoviesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		421FD5DB23E2183A00CE0230 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				421FD5CA23E20E4F00CE0230 /* Main.storyboard */,
+				421FD5CF23E20E5700CE0230 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		421FD5DC23E2183E00CE0230 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				421FD5DD23E219DA00CE0230 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		421FD5DF23E2240300CE0230 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				421FD5E023E2241D00CE0230 /* MovieCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C4D9C70B9D1028B9576C37A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71092EFDD6860A3B2CA37C94 /* Pods-Flixr.debug.xcconfig */,
+				23A9321BD64F45420944E107 /* Pods-Flixr.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 421FD5D523E20E5700CE0230 /* Build configuration list for PBXNativeTarget "Flixr" */;
 			buildPhases = (
+				64824D5779982E44C11EBB57 /* [CP] Check Pods Manifest.lock */,
 				421FD5BD23E20E4F00CE0230 /* Sources */,
 				421FD5BE23E20E4F00CE0230 /* Frameworks */,
 				421FD5BF23E20E4F00CE0230 /* Resources */,
+				E85CA38D892B68A612EEB5C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +198,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64824D5779982E44C11EBB57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flixr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E85CA38D892B68A612EEB5C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flixr/Pods-Flixr-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flixr/Pods-Flixr-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flixr/Pods-Flixr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		421FD5BD23E20E4F00CE0230 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421FD5C923E20E4F00CE0230 /* ViewController.swift in Sources */,
 				421FD5C523E20E4F00CE0230 /* AppDelegate.swift in Sources */,
 				421FD5C723E20E4F00CE0230 /* SceneDelegate.swift in Sources */,
+				421FD5DE23E219DA00CE0230 /* Movie.swift in Sources */,
+				421FD5E123E2241D00CE0230 /* MovieCell.swift in Sources */,
+				421FD5D923E2181400CE0230 /* MoviesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +391,7 @@
 		};
 		421FD5D623E20E5700CE0230 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71092EFDD6860A3B2CA37C94 /* Pods-Flixr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +410,7 @@
 		};
 		421FD5D723E20E5700CE0230 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23A9321BD64F45420944E107 /* Pods-Flixr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
