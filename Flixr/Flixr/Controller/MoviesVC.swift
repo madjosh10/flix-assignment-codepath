@@ -34,9 +34,7 @@ class MoviesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
               // TODO: Get the array of movies
                 self.movieDictionary = dataDictionary["results"] as! [[String: Any]]
                 self.tableView.reloadData()
-              // TODO: Store the movies in a property to use elsewhere
             
-              // TODO: Reload your table view data
                 
            }
         }
