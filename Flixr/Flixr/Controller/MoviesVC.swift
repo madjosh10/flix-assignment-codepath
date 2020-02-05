@@ -54,7 +54,7 @@ class MoviesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let movie = movieDictionary[indexPath.row]
         let title = movie["title"] as! String
         let synopsis = movie["overview"] as! String
-         
+        
         cell.movieTitle.text = title
         cell.movieSynopsis.text = synopsis
         
@@ -69,7 +69,7 @@ class MoviesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
 //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        tableView.deselectRow(at: indexPath, animated: true)
-//        
+//
 //    } // end didSelectRowAt
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

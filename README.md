@@ -13,6 +13,11 @@ For this unit's app assignment, you'll build the first part of a movie browsing 
 - [X] User can view the app on various sizes and orientations
 - [X] Run your app on a real device
 
+## Flixr Part 2 
+### Required (10pts)
+- [X] (5pts) User can tap a cell to see more details about a particular movie.
+- [] (5pts) User can tap a bar tab button to view a grid layout of Moive Posters using a CollectionView. 
+
 ### Version 2
 - [] Fixing constraints for cell
 - [] Finding appropriate font scale/size
@@ -22,4 +27,9 @@ For this unit's app assignment, you'll build the first part of a movie browsing 
 - [] Passing data to another view controller
 - [] Showing users data
 - [] Go back to previous view
+
+
+### BONUS 
+- [] (2pts) Usser can tap a poster in the collection view to see a detail screen of that movie.
+- [] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 

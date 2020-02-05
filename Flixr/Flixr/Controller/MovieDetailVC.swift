@@ -7,15 +7,38 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MovieDetailVC: UIViewController {
     
     var movie: [String: Any]!
-
+    
+    
+    @IBOutlet weak var backdropImage: UIImageView!
+    @IBOutlet weak var moviePoster: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        titleLabel.text = movie["title"] as? String
+        titleLabel.sizeToFit()
+        detailsLabel.text = movie["overview"] as? String
+        detailsLabel.sizeToFit()
+        
+        let baseURL = "https://image.tmdb.org/t/p/w185"
+        let postURL = movie["poster_path"] as! String
+        let combinedURL = URL(string: baseURL + postURL)
+              
+        moviePoster.af_setImage(withURL: combinedURL!)
+        
+        let backDropURL = movie["backdrop_path"] as! String
+        let backDropCombo = URL(string: "https://image.tmdb.org/t/p/w780" + postURL)
+        
+        backdropImage.af_setImage(withURL: backDropCombo!)
+        
     }
     
 
