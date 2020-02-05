@@ -39,6 +39,8 @@ class MoviesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
            }
         }
         task.resume()
+        
+        
     }
     
     
@@ -62,8 +64,27 @@ class MoviesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         cell.moviePoster.af_setImage(withURL: combinedURL!)
         
-        return cell ?? UITableViewCell()
+        return cell
     }
     
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        tableView.deselectRow(at: indexPath, animated: true)
+//        
+//    } // end didSelectRowAt
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // grab the cell, indexpath and declare a variable that is using the
+        // movieDictionary array
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movieDictionary[indexPath.row]
+        
+        let detailsVC = segue.destination as! MovieDetailVC
+        
+        detailsVC.movie = movie
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 
 } // end MoviesVC

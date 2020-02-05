@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		421FD5D923E2181400CE0230 /* MoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD5D823E2181400CE0230 /* MoviesVC.swift */; };
 		421FD5DE23E219DA00CE0230 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD5DD23E219DA00CE0230 /* Movie.swift */; };
 		421FD5E123E2241D00CE0230 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421FD5E023E2241D00CE0230 /* MovieCell.swift */; };
+		42BC5A7523EB4DD9005E8D98 /* MovieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BC5A7423EB4DD9005E8D98 /* MovieDetailVC.swift */; };
 		B394C63FDE3BB53381B47834 /* Pods_Flixr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6158947B6BF7240B0F9CBD /* Pods_Flixr.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		421FD5D823E2181400CE0230 /* MoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVC.swift; sourceTree = "<group>"; };
 		421FD5DD23E219DA00CE0230 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		421FD5E023E2241D00CE0230 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		42BC5A7423EB4DD9005E8D98 /* MovieDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailVC.swift; sourceTree = "<group>"; };
 		71092EFDD6860A3B2CA37C94 /* Pods-Flixr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixr.debug.xcconfig"; path = "Target Support Files/Pods-Flixr/Pods-Flixr.debug.xcconfig"; sourceTree = "<group>"; };
 		FF6158947B6BF7240B0F9CBD /* Pods_Flixr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				421FD5D823E2181400CE0230 /* MoviesVC.swift */,
+				42BC5A7423EB4DD9005E8D98 /* MovieDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,7 +129,6 @@
 				71092EFDD6860A3B2CA37C94 /* Pods-Flixr.debug.xcconfig */,
 				23A9321BD64F45420944E107 /* Pods-Flixr.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +251,7 @@
 				421FD5C723E20E4F00CE0230 /* SceneDelegate.swift in Sources */,
 				421FD5DE23E219DA00CE0230 /* Movie.swift in Sources */,
 				421FD5E123E2241D00CE0230 /* MovieCell.swift in Sources */,
+				42BC5A7523EB4DD9005E8D98 /* MovieDetailVC.swift in Sources */,
 				421FD5D923E2181400CE0230 /* MoviesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
