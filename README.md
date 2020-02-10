@@ -30,6 +30,6 @@ For this unit's app assignment, you'll build the first part of a movie browsing 
 
 
 ### BONUS 
-- [] (2pts) Usser can tap a poster in the collection view to see a detail screen of that movie.
+- [] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
 - [] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
