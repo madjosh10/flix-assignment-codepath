@@ -22,7 +22,7 @@ For this unit's app assignment, you'll build the first part of a movie browsing 
 - [X] (5pts) User can tap a bar tab button to view a grid layout of Moive Posters using a CollectionView. 
 
 ### Version 2
-- [] Fixing constraints for cell
+- [X] Fixing constraints for cell
 - [X] Finding appropriate font scale/size
 - [X] UI change to UICollection instead of UITableView
 
