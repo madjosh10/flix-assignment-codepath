@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -83,6 +84,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.16006088260000001" green="0.15707042809999999" blue="0.15697172279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.98039215690000003" green="0.98431372549999996" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="GAK-Ss-7Bw" kind="relationship" relationship="viewControllers" id="I8Q-kc-6Bw"/>
@@ -108,7 +111,7 @@
                                     <constraint firstAttribute="height" constant="250" id="pjt-O2-qfp"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rlV-hH-ylX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rlV-hH-ylX">
                                 <rect key="frame" x="9" y="260" width="150" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="9tb-TG-qLS"/>
@@ -165,11 +168,11 @@
             </objects>
             <point key="canvasLocation" x="1682.608695652174" y="118.52678571428571"/>
         </scene>
-        <!--Super Hero-->
+        <!--Now Playing-->
         <scene sceneID="YGQ-Va-W7h">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GAK-Ss-7Bw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Super Hero" image="superhero_tabbar_item" id="XcB-yU-eDl"/>
+                    <tabBarItem key="tabBarItem" title="Now Playing" image="now_playing_tabbar_item" id="XcB-yU-eDl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="J09-O0-TMc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -196,20 +199,61 @@
                     <view key="view" contentMode="scaleToFill" id="Uiy-Jr-vrJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UKz-uN-7hA">
+                                <rect key="frame" x="0.0" y="20" width="414" height="856"/>
+                                <color key="backgroundColor" red="0.16006088260000001" green="0.15707042809999999" blue="0.15697172279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c9P-Hv-9Ft">
+                                    <size key="itemSize" width="188" height="224"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieGridCell" id="RoL-ci-Dx2" customClass="MovieGridCell" customModule="Flixr" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="224"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AxK-fd-etY">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="224"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R3h-h8-0Nv">
+                                                    <rect key="frame" x="8" y="8" width="200" height="224"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="200" height="224"/>
+                                        <connections>
+                                            <outlet property="posterView" destination="R3h-h8-0Nv" id="pwO-vP-iOT"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UKz-uN-7hA" secondAttribute="bottom" constant="20" symbolic="YES" id="TQf-Hi-5SR"/>
+                            <constraint firstItem="UKz-uN-7hA" firstAttribute="leading" secondItem="jpr-fO-Jog" secondAttribute="leading" id="iO2-XX-WSb"/>
+                            <constraint firstItem="UKz-uN-7hA" firstAttribute="top" secondItem="Uiy-Jr-vrJ" secondAttribute="top" constant="20" symbolic="YES" id="q6y-1a-oRi"/>
+                            <constraint firstItem="UKz-uN-7hA" firstAttribute="trailing" secondItem="jpr-fO-Jog" secondAttribute="trailing" id="w2K-Pg-qQO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jpr-fO-Jog"/>
                     </view>
                     <navigationItem key="navigationItem" title="Super Hero" id="9Q1-C9-eGI"/>
+                    <connections>
+                        <outlet property="collectionView" destination="UKz-uN-7hA" id="ahQ-ya-iby"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fg-ul-ES7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="163.768115942029" y="857.8125"/>
         </scene>
-        <!--Now Playing-->
+        <!--Super Hero-->
         <scene sceneID="VHf-Fk-bss">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FF9-eW-1gO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Now Playing" image="now_playing_tabbar_item" id="bmz-05-D60"/>
+                    <tabBarItem key="tabBarItem" title="Super Hero" image="superhero_tabbar_item" id="bmz-05-D60"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="bbD-ST-vGw">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

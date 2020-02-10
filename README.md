@@ -16,17 +16,17 @@ For this unit's app assignment, you'll build the first part of a movie browsing 
 ## Flixr Part 2 
 ### Required (10pts)
 - [X] (5pts) User can tap a cell to see more details about a particular movie.
-- [] (5pts) User can tap a bar tab button to view a grid layout of Moive Posters using a CollectionView. 
+- [X] (5pts) User can tap a bar tab button to view a grid layout of Moive Posters using a CollectionView. 
 
 ### Version 2
 - [] Fixing constraints for cell
-- [] Finding appropriate font scale/size
-- [] UI change to UICollection instead of UITableView
+- [X] Finding appropriate font scale/size
+- [X] UI change to UICollection instead of UITableView
 
 ### Version 2.1.0
-- [] Passing data to another view controller
-- [] Showing users data
-- [] Go back to previous view
+- [X] Passing data to another view controller
+- [X] Showing users data
+- [X] Go back to previous view
 
 
 ### BONUS 
